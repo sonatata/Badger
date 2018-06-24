@@ -1,0 +1,9 @@
+'here: <audio src="' + jingle +'"/>'
+
+open badger
+tell badger to create a board for john
+tell badger that john picked up the toys
+tell badger that john made the bed
+tell badger that john helped his sister with homework
+tell badger that john walked the dog
+tell badger stop

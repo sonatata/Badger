@@ -1,0 +1,220 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "badger",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "I dont understand",
+                        "help",
+                        "I need help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop",
+                        "stop badger",
+                        "close",
+                        "bye",
+                        "talk to you later Badger"
+                    ]
+                },
+                {
+                    "name": "startBoardIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "start a new board for {name} "
+                    ]
+                },
+                {
+                    "name": "bedroomTaskIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "bedroomAction",
+                            "type": "action"
+                        }
+                    ],
+                    "samples": [
+                        "{name} {bedroomAction}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "petCareTaskIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "petAction",
+                            "type": "petAction"
+                        }
+                    ],
+                    "samples": [
+                        "{name} {petAction}"
+                    ]
+                },
+                {
+                    "name": "kindnessTaskIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "kindnessAction",
+                            "type": "kindnessAction"
+                        }
+                    ],
+                    "samples": [
+                        "{name} {kindnessAction}"
+                    ]
+                },
+                {
+                    "name": "bedroomoneIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "{name} picked up the toys"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "action",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "bedroom",
+                                "synonyms": [
+                                    "made the bed",
+                                    "clean bedroom",
+                                    "made bed",
+                                    "tidy room"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "petAction",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "brush",
+                                "synonyms": [
+                                    "brush the dog"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "feed",
+                                "synonyms": [
+                                    "feed the cat",
+                                    "feed the dog"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "walk",
+                                "synonyms": [
+                                    "walk the cat",
+                                    "walk the dog"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "kindnessAction",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "shoveling",
+                                "synonyms": [
+                                    "shoveled",
+                                    "shovel"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "homework"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "share"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
